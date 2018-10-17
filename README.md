@@ -13,8 +13,6 @@ These sessions will cover the use of a variety of software tools needed for the 
 
 Participants must have already taken a basic course in Bioinformatics.
 
----
-
 ## Materials and Data
 
 #### Software
@@ -35,8 +33,6 @@ To carry on with the analyses, the students the following programs already insta
 * Slides and data for the course: [link](http://tiny.cc/UMRMicrobiome2018) (this will expire shortly after the Praktikum sessions).
 
 Alternatively, the course can be also followed using the [MiSeq SOP](http://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip) FASTQ files.
-
----
 
 ## Contact
 
