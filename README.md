@@ -11,7 +11,7 @@ These sessions will cover the use of a variety of software tools needed for the 
 
 #### Prerequisites
 
-Participants must have already taken a basic course in Bioinformatics.
+Participants must have already taken [Medical Bioinformatics](https://sites.google.com/site/medbioinf2018/home), or an equivalent basic course in Bioinformatics. No previous knowledge of programming and/or working with the command line interface are required.
 
 #### Venue and Dates
 
@@ -37,7 +37,7 @@ Please notice that `PANDAseq` requires certain libraries in Linux and Mac OSX to
 
 #### Experimental Data
 
-* Slides and data for the course: [link](http://tiny.cc/UMRMicrobiome2018) (this link will expire shortly after the Praktikum sessions).
+* Slides and data for the course: [link](http://tiny.cc/UMRMicrobiome2018) (**Note**: sequencing data will expire shortly after the Praktikum sessions).
 
 Alternatively, the course can be also followed using the [MiSeq SOP](http://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip) FASTQ files.
 
