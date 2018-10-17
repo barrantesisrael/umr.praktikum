@@ -24,14 +24,13 @@ To carry on with the analyses, the students the following programs already insta
 
 * European [Galaxy mirror](https://usegalaxy.eu)
 * [RDP Aligner](https://pyro.cme.msu.edu/aligner/form.spr)
-* [RDP Aligner](https://pyro.cme.msu.edu/cluster/form.spr)
+* [RDP Complete Clustering](https://pyro.cme.msu.edu/cluster/form.spr) tool
 
 ### Experimental Data
 
 * Slides and data for the course: [link](http://tiny.cc/UMRMicrobiome2018)
 
 Alternatively, the course can be also followed using the [MiSeq SOP](http://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip) FASTQ files.
-
 
 ### Contact
 
