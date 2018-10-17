@@ -27,6 +27,8 @@ To carry on with the analyses, the students the following programs already insta
 * RStudio: https://www.rstudio.com/products/rstudio/download/
 * Pandaseq: https://github.com/neufeld/pandaseq/wiki/Installation
 
+Please notice that pandaseq requires certain libraries in Linux and Mac OSX, as indicated on the link above.
+
 #### Online tools
 
 * European [Galaxy mirror](https://usegalaxy.eu)
