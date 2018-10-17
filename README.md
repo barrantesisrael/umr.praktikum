@@ -46,7 +46,7 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
 * Afgan E et al. (2018). The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update. Nucleic Acids Research, 46(W1), W537-W544. https://doi.org/10.1093/nar/gky379
 * Cole JR et al. (2014). Ribosomal Database Project: data and tools for high throughput rRNA analysis. Nucleic Acids Research, 42(D1), D633–D642. https://doi.org/10.1093/nar/gkt1244
 * Knight R et al. (2018). Best practices for analysing microbiomes. Nature Reviews Microbiology, 1. https://doi.org/10.1038/s41579-018-0029-9
-* Goodrich JKK et al. (2014). Conducting a Microbiome Study. Cell, 158(2), 250–262. Retrieved from https://www.sciencedirect.com/science/article/pii/S0092867414008642?via%3Dihub
+* Goodrich JKK et al. (2014). Conducting a Microbiome Study. Cell, 158(2), 250–262. https://doi.org/10.1016/j.cell.2014.06.037
 * Masella AP et al. (2012). PANDAseq: Paired-end assembler for illumina sequences. BMC Bioinformatics, 13(1), 31. https://doi.org/10.1186/1471-2105-13-31
 * McDonald D et al. (2012). The Biological Observation Matrix (BIOM) format or: how I learned to stop worrying and love the ome-ome. GigaScience, 1(1), 7. https://doi.org/10.1186/2047-217X-1-7
 * McMurdie PJ and Holmes S. (2013). Phyloseq: An R Package for Reproducible Interactive Analysis and Graphics of Microbiome Census Data. PLoS ONE, 8(4), e61217. https://doi.org/10.1371/journal.pone.0061217
