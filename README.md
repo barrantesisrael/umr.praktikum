@@ -15,7 +15,7 @@ Participants must have already taken a basic course in Bioinformatics.
 
 #### Venue and Dates
 
-IBIMA Computerraum (Ernst-Heydemann-Str. 8, 3. Etage, Nr. 3016) <br>
+[IBIMA](https://ibima.med.uni-rostock.de) Computerraum ([Ernst-Heydemann-Str. 8](https://goo.gl/maps/JGDWhPDLHxG2), 3. Etage, Nr. 3016) <br>
 17.10 and 24.10.2018, 10:00 - 11:30 hrs.
 
 ## Materials and Data
