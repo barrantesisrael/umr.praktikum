@@ -13,6 +13,11 @@ These sessions will cover the use of a variety of software tools needed for the 
 
 Participants must have already taken a basic course in Bioinformatics.
 
+#### Venue and Dates
+
+IBIMA Computerraum (Ernst-Heydemann-Str. 8, 3. Etage, Nr. 3016)
+17.10 and 24.10.2018, 10:00 - 11:30 hrs.
+
 ## Materials and Data
 
 #### Software
