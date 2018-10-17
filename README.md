@@ -24,10 +24,10 @@ Participants must have already taken a basic course in Bioinformatics.
 
 To carry on with the analyses, the students the following programs already installed before the Praktikum sessions:
 
-* RStudio: https://www.rstudio.com/products/rstudio/download/
-* Pandaseq: https://github.com/neufeld/pandaseq/wiki/Installation
+* `RStudio`: https://www.rstudio.com/products/rstudio/download/
+* `Pandaseq`: https://github.com/neufeld/pandaseq/wiki/Installation
 
-Please notice that pandaseq requires certain libraries in Linux and Mac OSX, as indicated on the link above.
+Please notice that `pandaseq` requires certain libraries in Linux and Mac OSX to be installed beforehand, as indicated on the link above.
 
 #### Online tools
 
