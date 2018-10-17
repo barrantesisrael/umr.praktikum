@@ -37,7 +37,7 @@ Please notice that pandaseq requires certain libraries in Linux and Mac OSX, as 
 
 #### Experimental Data
 
-* Slides and data for the course: [link](http://tiny.cc/UMRMicrobiome2018) (this will expire shortly after the Praktikum sessions).
+* Slides and data for the course: [link](http://tiny.cc/UMRMicrobiome2018) (this link will expire shortly after the Praktikum sessions).
 
 Alternatively, the course can be also followed using the [MiSeq SOP](http://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip) FASTQ files.
 
@@ -45,7 +45,7 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
 
 * Afgan E et al. (2018). The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update. Nucleic Acids Research, 46(W1), W537-W544. https://doi.org/10.1093/nar/gky379
 * Cole JR et al. (2014). Ribosomal Database Project: data and tools for high throughput rRNA analysis. Nucleic Acids Research, 42(D1), D633–D642. https://doi.org/10.1093/nar/gkt1244
-* Knight R et al. (2018). Best practices for analysing microbiomes. Nature Reviews Microbiology, 1. https://doi.org/10.1038/s41579-018-0029-9
+* Knight R et al. (2018). Best practices for analysing microbiomes. Nature Reviews Microbiology, 16, 410–422. https://doi.org/10.1038/s41579-018-0029-9
 * Goodrich JKK et al. (2014). Conducting a Microbiome Study. Cell, 158(2), 250–262. https://doi.org/10.1016/j.cell.2014.06.037
 * Masella AP et al. (2012). PANDAseq: Paired-end assembler for illumina sequences. BMC Bioinformatics, 13(1), 31. https://doi.org/10.1186/1471-2105-13-31
 * McDonald D et al. (2012). The Biological Observation Matrix (BIOM) format or: how I learned to stop worrying and love the ome-ome. GigaScience, 1(1), 7. https://doi.org/10.1186/2047-217X-1-7
