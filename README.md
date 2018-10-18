@@ -43,6 +43,9 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
 
 #### Sequencing and Assembly results
 
+<details>
+  <p>
+  
 |Sequencing id | Reads forward | Bases forward | Reads reverse | Bases reverse | Sequences after Assembly |
 |---|---|---|---|---|---|
 |Platz1|932,488|233,195,615|932,488|232,946,687|806,369|
@@ -68,7 +71,9 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
 |Kontrolle2|131,487|32,942,960|131,487|32,915,422|104,666|
 |negativ|33,802|2,056,765|33,802|2,188,684|3,656|
 
-
+  <p>
+</details>
+  
 ## References
 
 * Afgan E et al. (2018). The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update. Nucleic Acids Research, 46(W1), W537-W544. https://doi.org/10.1093/nar/gky379
