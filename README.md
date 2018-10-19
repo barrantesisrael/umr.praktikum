@@ -74,57 +74,6 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
   <p>
 </details>
   
-## Code
-
-Reinstall from MacQIIME ([source](http://www.wernerlab.org/software/macqiime))
-
-```bash
-# 2018-10-18
-# barrantes@IsraelBarrantesiMacIBIMA:~/installer/bioinfo
-
-# downloaded from ftp://ftp.microbio.me/pub/macqiime-releases/MacQIIME_1.9.1-20150604_OS10.7.tgz
-$ mv ~/Downloads/MacQIIME_1.9.1-20150604_OS10.7.tar .        
-$ tar xf MacQIIME_1.9.1-20150604_OS10.7.tar 
-$ cd MacQIIME_1.9.1-20150604_OS10.7
-$ ./install.s 
-
-# because of security fixes on MacOS 10.11+, these two commands are required
-$ sudo cp scripts/macqiime /usr/local/bin/macqiime
-$ sudo chmod a+x /usr/local/bin/macqiime
-
-# to start the environment, type:
-$ macqiime
-
-# using vsearch instead of usearch
-# ref https://groups.google.com/forum/#!topic/qiime-forum/-K_HpkBdLYY
-# barrantes@IsraelBarrantesiMacIBIMA:~/installer/bioinfo
-$ wget --quiet https://github.com/torognes/vsearch/releases/download/v2.9.0/vsearch-2.9.0-macos-x86_64.tar.gz
-$ tar xzf vsearch-2.9.0-macos-x86_64.tar.gz
-$ cd ~/bin
-$ unlink usearch61 
-$ ln -s ~/installer/bioinfo/vsearch-2.9.0-macos-x86_64/bin/vsearch usearch61
-# this works
-```
-
-A simple protocol for PCA. ([source](http://web.stanford.edu/class/bios221/MicrobiomeWorkflowII.html#different_ordination_projections))
-
-```r
-out.pcoa.log <- ordinate(pslog,  method = "MDS", distance = "bray")
-evals <- out.pcoa.log$values[,1]
-plot_ordination(pslog, out.pcoa.log, color = "age_binned",
-                  shape = "family_relationship") +
-  labs(col = "Binned Age", shape = "Litter")+
-  coord_fixed(sqrt(evals[2] / evals[1]))
-
-# DPCoA with sample IDs as labels
-out.dpcoa.log <- ordinate(pslog, method = "DPCoA")
-evals <- out.dpcoa.log$eig
-plot_ordination(pslog, out.dpcoa.log, color = "age_binned", label= "SampleID",
-                  shape = "family_relationship") +
-  labs(col = "Binned Age", shape = "Litter")+
-  coord_fixed(sqrt(evals[2] / evals[1]))
-```
-
 
   
 ## References
