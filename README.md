@@ -106,6 +106,26 @@ $ ln -s ~/installer/bioinfo/vsearch-2.9.0-macos-x86_64/bin/vsearch usearch61
 # this works
 ```
 
+A simple protocol for PCA. ([source](http://web.stanford.edu/class/bios221/MicrobiomeWorkflowII.html#different_ordination_projections))
+
+```r
+out.pcoa.log <- ordinate(pslog,  method = "MDS", distance = "bray")
+evals <- out.pcoa.log$values[,1]
+plot_ordination(pslog, out.pcoa.log, color = "age_binned",
+                  shape = "family_relationship") +
+  labs(col = "Binned Age", shape = "Litter")+
+  coord_fixed(sqrt(evals[2] / evals[1]))
+
+# DPCoA with sample IDs as labels
+out.dpcoa.log <- ordinate(pslog, method = "DPCoA")
+evals <- out.dpcoa.log$eig
+plot_ordination(pslog, out.dpcoa.log, color = "age_binned", label= "SampleID",
+                  shape = "family_relationship") +
+  labs(col = "Binned Age", shape = "Litter")+
+  coord_fixed(sqrt(evals[2] / evals[1]))
+```
+
+
   
 ## References
 
