@@ -74,6 +74,39 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
   <p>
 </details>
   
+## Code
+
+Reinstall from MacQIIME ([source](http://www.wernerlab.org/software/macqiime))
+
+```bash
+# 2018-10-18
+# barrantes@IsraelBarrantesiMacIBIMA:~/installer/bioinfo
+
+# downloaded from ftp://ftp.microbio.me/pub/macqiime-releases/MacQIIME_1.9.1-20150604_OS10.7.tgz
+$ mv ~/Downloads/MacQIIME_1.9.1-20150604_OS10.7.tar .        
+$ tar xf MacQIIME_1.9.1-20150604_OS10.7.tar 
+$ cd MacQIIME_1.9.1-20150604_OS10.7
+$ ./install.s 
+
+# because of security fixes on MacOS 10.11+, these two commands are required
+$ sudo cp scripts/macqiime /usr/local/bin/macqiime
+$ sudo chmod a+x /usr/local/bin/macqiime
+
+# to start the environment, type:
+$ macqiime
+
+# using vsearch instead of usearch
+# ref https://groups.google.com/forum/#!topic/qiime-forum/-K_HpkBdLYY
+# barrantes@IsraelBarrantesiMacIBIMA:~/installer/bioinfo
+$ wget --quiet https://github.com/torognes/vsearch/releases/download/v2.9.0/vsearch-2.9.0-macos-x86_64.tar.gz
+$ tar xzf vsearch-2.9.0-macos-x86_64.tar.gz
+$ cd ~/bin
+$ unlink usearch61 
+$ ln -s ~/installer/bioinfo/vsearch-2.9.0-macos-x86_64/bin/vsearch usearch61
+# this works
+```
+
+  
 ## References
 
 * Afgan E et al. (2018). The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update. Nucleic Acids Research, 46(W1), W537-W544. https://doi.org/10.1093/nar/gky379
