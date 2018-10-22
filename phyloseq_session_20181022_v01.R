@@ -69,3 +69,9 @@ plot_ordination(ExperimentPhyloseqTempObject, iMDS, color="Gender") +
        subtitle = "Sample ordination through Bray-Curtis distance") 
 dev.off()
 
+
+# Plot abundances
+plot_bar(ExperimentPhyloseqTempObject, "X.SampleID", fill="Phylum") +
+  labs(title = "Bacterial Communities in the Classroom",
+       subtitle = "Phylum Composition by sample; unknown genera not considered",
+       x = "Sample", y = "Abundance\n") 
