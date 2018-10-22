@@ -47,7 +47,7 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
   <p>
     
 |sequencing_id|reads_forward|bases_forward|reads_reverse|bases_reverse|assembly_sequences|
-|---|---:|---:|---:|---:|---|
+|---|---:|---:|---:|---:|---:|
 |Platz1|932,488|233,195,615|932,488|232,946,687|806,369|
 |Platz2|1,176,871|294,977,140|1,176,871|294,594,514|988,052|
 |Platz3|818,952|205,177,629|818,952|204,824,283|572,816|
