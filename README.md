@@ -46,6 +46,7 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
 <details>
   <p>
   
+  <right>
 |Sequencing id | Reads forward | Bases forward | Reads reverse | Bases reverse | Sequences after Assembly |
 |---|---|---|---|---|---|
 |Platz1|932,488|233,195,615|932,488|232,946,687|806,369|
@@ -71,6 +72,7 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
 |Kontrolle2|131,487|32,942,960|131,487|32,915,422|104,666|
 |negativ|33,802|2,056,765|33,802|2,188,684|3,656|
 
+  </right>
   <p>
 </details>
   
