@@ -46,7 +46,7 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
 <details>
   <p>
   
-  <right>
+  <div align="right">
   
 |Sequencing id | Reads forward | Bases forward | Reads reverse | Bases reverse | Sequences after Assembly |
 |---|---|---|---|---|---|
@@ -73,7 +73,7 @@ Alternatively, the course can be also followed using the [MiSeq SOP](http://www.
 |Kontrolle2|131,487|32,942,960|131,487|32,915,422|104,666|
 |negativ|33,802|2,056,765|33,802|2,188,684|3,656|
 
-  </right>
+  </div>
   <p>
 </details>
   
