@@ -48,7 +48,6 @@ ExperimentPhyloseqTempObject <-  subset_taxa(ExperimentPhyloseqTempObject,
                                                Family  != "mitochondria" &
                                                Class   != "Chloroplast") 
 
-
 # Calculate distance and ordination
 iDist <- distance(ExperimentPhyloseqTempObject, method="bray")
 iMDS  <- ordinate(ExperimentPhyloseqTempObject, distance=iDist)
@@ -69,9 +68,11 @@ plot_ordination(ExperimentPhyloseqTempObject, iMDS, color="Gender") +
        subtitle = "Sample ordination through Bray-Curtis distance") 
 dev.off()
 
-
 # Plot abundances
 plot_bar(ExperimentPhyloseqTempObject, "X.SampleID", fill="Phylum") +
   labs(title = "Bacterial Communities in the Classroom",
        subtitle = "Phylum Composition by sample; unknown genera not considered",
        x = "Sample", y = "Abundance\n") 
+
+# saving session
+save.image("praktikum2018Okt.RData")
