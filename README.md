@@ -37,7 +37,7 @@ Please notice that `PANDAseq` requires certain libraries in Linux and Mac OSX to
 
 #### Experimental Data
 
-* Slides and data for the course: [link](http://tiny.cc/UMRMicrobiome2018) (**Note**: sequencing data will expire shortly after the Praktikum sessions).
+* Slides and data for the course: [link](http://tiny.cc/UMRMicrobiome2018) (**Note**: This like will expire shortly after the Praktikum sessions).
 
 Alternatively, the course can be also followed using the [MiSeq SOP](http://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip) FASTQ files.
 
