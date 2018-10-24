@@ -26,14 +26,14 @@ setwd("/Users/barrantes/Documents/courses/MicrobiomeWS201819/illuminadata")
 # OTU BIOM file
 InputBiomFile <- "otu_table_high_conf_filtered.biom"
 
-# map file
+# Sample (map) file
 InputMapFile <- "mapping.tsv"
 
-# prepare phyloseq object
+# prepare phyloseq object by loading both files
 BiomData <- import_biom(InputBiomFile, parseFunction = parse_taxonomy_greengenes)
 SampleData <- import_qiime_sample_data(InputMapFile)
 
-# create phyloseq object
+# create phyloseq object from OTUs and sample data
 ExperimentPhyloseqObject <- merge_phyloseq(BiomData, SampleData)
 
 # Filtering out data
@@ -56,7 +56,7 @@ iMDS  <- ordinate(ExperimentPhyloseqTempObject, distance=iDist)
 # plot
 plot_ordination(ExperimentPhyloseqTempObject, iMDS, color="Gender")
 
-# plot with labels (requires ggplot2)
+# plot with labels ('geom_text' requires ggplot2)
 library(ggplot2, quietly = TRUE)
 plot_ordination(ExperimentPhyloseqTempObject, iMDS, color="Gender") + 
   geom_text(aes(label=X.SampleID), hjust=0, vjust=0) 
