@@ -23,7 +23,7 @@ library(phyloseq)
 # input(s)
 setwd("/Users/barrantes/Documents/courses/MicrobiomeWS201819/illuminadata")
 
-# input filtered for low confidence otus, and with rarefaction
+# OTU BIOM file
 InputBiomFile <- "otu_table_high_conf_filtered.biom"
 
 # map file
