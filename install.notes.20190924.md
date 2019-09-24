@@ -51,7 +51,6 @@ BiocManager::install("phyloseq")
 
 ```r
 # test session
-
 library(phyloseq)
 
 # OSX/Linux
