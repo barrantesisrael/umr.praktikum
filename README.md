@@ -17,6 +17,8 @@ _Note_: There are **no** 32-bit versions of RStudio. In this case, students can 
 
 ## R packages
 
+To be installed during the lab sessions:
+
 ```r
 # ggplot2
 install.packages("ggplot2")
