@@ -31,6 +31,12 @@ BiocManager::install()
 # phyloseq
 BiocManager::install("phyloseq")
 ```
+---
+
+## Data
+
+- Illumina data: [cloud drive](https://drive.google.com/drive/folders/1QtxFK-2UPxlSLwOA4rQByOMHY7LUF7Fr?usp=sharing); see `FASTQ` folder.
+
 
 ---
 Last update 2019/09/24
