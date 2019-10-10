@@ -31,7 +31,6 @@ These sessions will cover the use of a variety of software tools needed for the 
 
 _Note_: There are **no** 32-bit versions of RStudio. In this case, students can use one of the few PCs in the Computer Room that have already RStudio installed.
 
----
 
 ##### R packages
 
@@ -51,9 +50,9 @@ BiocManager::install("phyloseq")
 ```
 ---
 
-## Materials
+## Materials and online methods
 
-##### Online tools
+##### Tools
 
 * European [Galaxy mirror](https://usegalaxy.eu)
 * [RDP Aligner](https://pyro.cme.msu.edu/aligner/form.spr)
