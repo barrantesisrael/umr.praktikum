@@ -55,7 +55,7 @@ BiocManager::install("phyloseq")
 
 ##### Tools
 
-* [Galaxy](https://usegalaxy.eu) project mirror
+* [Galaxy](https://usegalaxy.org) project mirror
 * [RDP Aligner](https://pyro.cme.msu.edu/aligner/form.spr)
 * [RDP Complete Clustering](https://pyro.cme.msu.edu/cluster/form.spr) tool
 
