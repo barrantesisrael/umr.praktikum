@@ -131,8 +131,8 @@ setwd("C:/bioinfo")
 # OTU file
 InputBiomFile <- "mikrobiome2019.biom"
 
-# Sample (map) file
-InputMapFile <- "mapping.tsv"
+# Samples' file
+InputMapFile <- "mapping2019.tsv"
 
 # prepare phyloseq object by loading both files
 BiomData <- import_biom(InputBiomFile, parseFunction = parse_taxonomy_greengenes)
