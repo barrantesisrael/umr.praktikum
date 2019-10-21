@@ -25,8 +25,7 @@ These sessions will cover the use of a variety of software tools needed for the 
 ##### Tools
 
 * [Galaxy](https://usegalaxy.org) project mirror
-* [RDP Aligner](https://pyro.cme.msu.edu/aligner/form.spr)
-* [RDP Complete Clustering](https://pyro.cme.msu.edu/cluster/form.spr) tool
+* [RDP Classifier webserver](http://rdp.cme.msu.edu/classifier/classifier.jsp)
 
 ##### Data
 
