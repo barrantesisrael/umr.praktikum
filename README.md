@@ -21,7 +21,7 @@ These sessions will cover the use of a variety of software tools needed for the 
 
 ---
 
-## Setup
+## Session 1: Setup
 
 ##### Software
 
@@ -32,8 +32,39 @@ These sessions will cover the use of a variety of software tools needed for the 
 
 _Note_: There are **no** 32-bit versions of RStudio. In this case, students can use one of the few PCs in the Computer Room that have already RStudio installed.
 
+---
 
-##### R packages
+## Materials and online methods
+
+##### Tools
+
+* [Galaxy](https://usegalaxy.org) project mirror
+* [RDP Aligner](https://pyro.cme.msu.edu/aligner/form.spr)
+* [RDP Complete Clustering](https://pyro.cme.msu.edu/cluster/form.spr) tool
+
+##### Data
+
+- Illumina data: [cloud drive](https://drive.google.com/drive/folders/1QtxFK-2UPxlSLwOA4rQByOMHY7LUF7Fr?usp=sharing); see `FASTQ` folder.
+- Alternatively, the course can be also followed using the [MiSeq SOP](http://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip) FASTQ files (Kosich et al., 2013).
+
+
+---
+
+## Session 3
+
+##### Running pandaseq on compressed FASTQ data (example)
+
+```bash
+$ pandaseq -f Platz16_S16_L001_R1_001.fastq.bz2 -r Platz16_S16_L001_R2_001.fastq.bz2 -w test.fasta -g log.txt
+```
+
+##### Align sequence data to rRNA databases
+
+- Access the RDP Aligner webserver
+- Open your FASTA output file e.g. `test.fasta` or `output.fasta`, on the `Editor` (`Notepad`)
+- Copy your first sequence and paste it to the RDP Aligner sequence box
+
+##### Install R packages
 
 To be installed during the lab sessions:
 
@@ -49,20 +80,6 @@ BiocManager::install()
 # phyloseq
 BiocManager::install("phyloseq")
 ```
----
-
-## Materials and online methods
-
-##### Tools
-
-* [Galaxy](https://usegalaxy.org) project mirror
-* [RDP Aligner](https://pyro.cme.msu.edu/aligner/form.spr)
-* [RDP Complete Clustering](https://pyro.cme.msu.edu/cluster/form.spr) tool
-
-##### Data
-
-- Illumina data: [cloud drive](https://drive.google.com/drive/folders/1QtxFK-2UPxlSLwOA4rQByOMHY7LUF7Fr?usp=sharing); see `FASTQ` folder.
-- Alternatively, the course can be also followed using the [MiSeq SOP](http://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip) FASTQ files (Kosich et al., 2013).
 
 ---
 
