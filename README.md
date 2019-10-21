@@ -60,7 +60,7 @@ _Note_: There are **no** 32-bit versions of RStudio. In this case, students can 
 ##### Running pandaseq on compressed FASTQ data (example)
 
 ```bash
-$ pandaseq -f Platz16_S16_L001_R1_001.fastq.bz2 -r Platz16_S16_L001_R2_001.fastq.bz2 -w test.fasta -g log.txt
+$ pandaseq -f Platz16_S16_L001_R1_001.fastq.bz2 -r Platz16_S16_L001_R2_001.fastq.bz2 -w output.fasta -g log.txt
 ```
 
 ---
@@ -70,7 +70,7 @@ $ pandaseq -f Platz16_S16_L001_R1_001.fastq.bz2 -r Platz16_S16_L001_R2_001.fastq
 
 ##### Align sequence data to rRNA databases
 
-- Open your FASTA output file e.g. `test.fasta` or `output.fasta`, on the `Editor` (`Notepad`)
+- Open your FASTA output file e.g. `output.fasta`, on the `Editor` (`Notepad`)
 - Copy your first 10 sequences, for example this one:
 
 ```
