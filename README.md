@@ -145,16 +145,7 @@ ExperimentPhyloseqObject <- merge_phyloseq(BiomData, SampleData)
 ##### Sample distribution
 
 ```r
-# Filtering out data
-# 1. Prune OTUs that are not present in any of the samples 
-ExperimentPhyloseqTempObject <- prune_taxa(taxa_sums(ExperimentPhyloseqObject) > 0, ExperimentPhyloseqObject)
-# 2. Prune unidentified Genuses
-ExperimentPhyloseqTempObject <-  subset_taxa(ExperimentPhyloseqTempObject, Genus   != "NA")
-# 3. Filter out Eukaryotes, Archaea, chloroplasts and mitochondria
-ExperimentPhyloseqTempObject <-  subset_taxa(ExperimentPhyloseqTempObject, 
-                                             Kingdom == "Bacteria" &
-                                               Family  != "mitochondria" &
-                                               Class   != "Chloroplast") 
+ExperimentPhyloseqTempObject <- ExperimentPhyloseqObject
 
 # Calculate distance and ordination
 iDist <- distance(ExperimentPhyloseqTempObject, method="bray")
@@ -173,12 +164,6 @@ plot_ordination(ExperimentPhyloseqTempObject, iMDS, color="Gender") +
 ```r
 # Plot abundances
 plot_bar(ExperimentPhyloseqTempObject, "X.SampleID", fill="Phylum")
-
-# Plot abundances, including labels
-plot_bar(ExperimentPhyloseqTempObject, "X.SampleID", fill="Phylum") +
-  labs(title = "Bacterial Communities in the Classroom",
-       subtitle = "Phylum Composition by sample; unknown genera not considered",
-       x = "Sample", y = "Abundance\n") 
 ```
 
 ---
