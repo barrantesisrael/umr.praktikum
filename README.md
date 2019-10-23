@@ -142,6 +142,13 @@ SampleData <- import_qiime_sample_data(InputMapFile)
 ExperimentPhyloseqObject <- merge_phyloseq(BiomData, SampleData)
 ```
 
+##### Sample microbial abundances
+
+```r
+# Plot abundances
+plot_bar(ExperimentPhyloseqTempObject, "X.SampleID", fill="Phylum")
+```
+
 ##### Sample distribution
 
 ```r
@@ -157,13 +164,6 @@ plot_ordination(ExperimentPhyloseqTempObject, iMDS, color="Gender")
 # plot sample ordination, including labels
 plot_ordination(ExperimentPhyloseqTempObject, iMDS, color="Gender") + 
   geom_text(aes(label=X.SampleID), hjust=0, vjust=0) 
-```
-
-##### Sample microbial abundances
-
-```r
-# Plot abundances
-plot_bar(ExperimentPhyloseqTempObject, "X.SampleID", fill="Phylum")
 ```
 
 ---
