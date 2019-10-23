@@ -142,7 +142,7 @@ SampleData <- import_qiime_sample_data(InputMapFile)
 ExperimentPhyloseqObject <- merge_phyloseq(BiomData, SampleData)
 ```
 
-##### Sample microbial abundances
+##### Microbial abundances per sample
 
 ```r
 # Plot abundances
