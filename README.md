@@ -140,6 +140,9 @@ SampleData <- import_qiime_sample_data(InputMapFile)
 
 # create phyloseq object by merging OTUs and sample data
 ExperimentPhyloseqObject <- merge_phyloseq(BiomData, SampleData)
+
+# create a temporary phyloseq object for working
+ExperimentPhyloseqTempObject <- ExperimentPhyloseqObject
 ```
 
 ##### Microbial abundances per sample
@@ -152,8 +155,6 @@ plot_bar(ExperimentPhyloseqTempObject, "X.SampleID", fill="Phylum")
 ##### Sample distribution
 
 ```r
-ExperimentPhyloseqTempObject <- ExperimentPhyloseqObject
-
 # Calculate distance and ordination
 iDist <- distance(ExperimentPhyloseqTempObject, method="bray")
 iMDS  <- ordinate(ExperimentPhyloseqTempObject, distance=iDist)
