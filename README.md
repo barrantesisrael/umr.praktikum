@@ -40,6 +40,24 @@ These sessions will cover the use of a variety of software tools needed for the 
 
 ## Session 1: Setup
 
+Create a directory under the root path called `bioinfo` and place all the downloaded files there
+
+Linux/Mac:
+
+```bash
+# linux / mac osx command line
+$ cd /
+$ mkdir bioinfo
+```
+
+Windows:
+
+```
+C:\Users\barrantes> cd ..\..
+C:\> mkdir bioinfo
+```
+
+
 ##### Software
 
 - `FastQC`: [Windows/Linux zip file](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.zip); Mac [DMG image](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.dmg)
