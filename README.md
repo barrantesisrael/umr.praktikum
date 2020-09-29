@@ -16,7 +16,7 @@ These sessions will cover the use of a variety of software tools needed for the 
 ##### Venues and Dates
 
 - Session 1, Software install: [Schillingallee 69a, 70 - SR1, Med. Th. Instit., Schillingallee 70](https://lsf.uni-rostock.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfoRaum&publishSubDir=raum&keep=y&raum.rgid=2114) <br>
-30.9.2020, afternoon (ca. 15 hrs). 	
+30.9.2020, 13 hrs. 	
 - Sessions 2-3, Data analysis: [IBIMA](https://ibima.med.uni-rostock.de) Computerraum ([Ernst-Heydemann-Str. 8](https://goo.gl/maps/JGDWhPDLHxG2), 3. Etage, Nr. 3016) <br>
 14.10 and 21.10.2020, 10:00 - 11:30 hrs.
 
