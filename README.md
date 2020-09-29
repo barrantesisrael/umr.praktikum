@@ -141,7 +141,7 @@ C:\bioinfo> panda\pandaseq.exe -f Platz16_S16_L001_R1_001.fastq -r Platz16_S16_L
 ## Session 3
 
 
-##### Align sequence data to rRNA databases
+##### 3.1 Align sequence data to rRNA databases
 
 - Open your FASTA output file e.g. `output.fasta`, on the `Editor` (`Notepad`)
 
@@ -179,13 +179,10 @@ Windows command:
 C:\bioinfo> type Platz16.output.fasta | more
 ```
 
+- Access the [RDP Classifier webserver](http://rdp.cme.msu.edu/classifier/classifier.jsp) and paste the copied sequence in the textbox under `Cut and paste sequence(s) (in Fasta, GenBank, or EMBL format):`
+- Click on `Submit`. When the run is already complete, examine the results. These can be also downloaded by clicking on `download entire hierarchy as text file`.
 
-- Create these sequences as a new text file on the `Editor`, and paste the copied sequence. Save the file with a new name, e.g. `rdpinput.fasta`
-- Access the [RDP Classifier webserver](http://rdp.cme.msu.edu/classifier/classifier.jsp)
-- On the RDP Classifier window, find and upload your `rdpinput.fasta` file. Click on `Submit`
-- When the run is already complete, download the results by clicking on `download entire hierarchy as text file`. Open this file on the `Editor` and examine the results.
-
-##### Install R packages
+##### 3.2 Install R packages
 
 Open RStudio, and on the code window paste the following code:
 
@@ -203,7 +200,7 @@ BiocManager::install("phyloseq")
 ```
 
 
-##### Loading microbiome data 
+##### 3.3 Loading libraries and microbiome data 
 
 ```r
 # load ggplot2 library (graphics)
@@ -234,14 +231,14 @@ ExperimentPhyloseqObject <- merge_phyloseq(BiomData, SampleData)
 ExperimentPhyloseqTempObject <- ExperimentPhyloseqObject
 ```
 
-##### Microbial abundances per sample
+##### 3.4 Microbial communities
 
 ```r
 # Plot abundances
 plot_bar(ExperimentPhyloseqTempObject, "X.SampleID", fill="Phylum")
 ```
 
-##### Sample distribution
+##### 3.5 Sample ordination
 
 ```r
 # Calculate distance and ordination
@@ -285,6 +282,6 @@ Ernst-Heydemann-Str. 8<br>
 Email: israel.barrantes[bei]uni-rostock.de
 
 ---
-Last update 2020/09/24
+Last update 2020/09/29
 
 
