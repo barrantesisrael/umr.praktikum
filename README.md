@@ -132,7 +132,7 @@ C:\> cd bioinfo
 C:\bioinfo> panda\pandaseq.exe -h
 
 # run pandaseq with the FASTQ data
-C:\bioinfo> pandaseq -f Platz16_S16_L001_R1_001.fastq.bz2 -r Platz16_S16_L001_R2_001.fastq.bz2  -w Platz16.output.fasta -g log.txt
+C:\bioinfo> panda\pandaseq.exe -f Platz16_S16_L001_R1_001.fastq.bz2 -r Platz16_S16_L001_R2_001.fastq.bz2  -w Platz16.output.fasta -g log.txt
 ```
 
 
@@ -203,14 +203,16 @@ library(ggplot2, quietly = TRUE)
 # loading phyloseq library (microbiome analysis)
 library(phyloseq, quietly = TRUE)
 
-# set working directory
+# set working directory (windows)
 setwd("C:/bioinfo")
+# set working directory (linux/mac)
+setwd("/bioinfo")
 
 # OTU file
-InputBiomFile <- "mikrobiome2019.biom"
+InputBiomFile <- "mikrobiome2020.biom"
 
 # Samples' file
-InputMapFile <- "mapping2019.tsv"
+InputMapFile <- "mapping2020.tsv"
 
 # prepare phyloseq object by loading both files
 BiomData <- import_biom(InputBiomFile, parseFunction = parse_taxonomy_greengenes)
