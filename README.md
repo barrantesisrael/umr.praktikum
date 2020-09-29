@@ -197,7 +197,7 @@ BiocManager::install("phyloseq")
 ##### Loading microbiome data 
 
 ```r
-# load ggplot2 library (improved graphics)
+# load ggplot2 library (graphics)
 library(ggplot2, quietly = TRUE)
 
 # loading phyloseq library (microbiome analysis)
