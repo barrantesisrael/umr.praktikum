@@ -116,8 +116,8 @@ Linux/Mac instructions:
 
 ```bash
 $ cd /bioinfo
-$ pandaseq -f Platz16_S16_L001_R1_001.fastq.bz2 \
- -r Platz16_S16_L001_R2_001.fastq.bz2 \
+$ pandaseq -f Platz16_S16_L001_R1_001.fastq \
+ -r Platz16_S16_L001_R2_001.fastq \
  -w Platz16.output.fasta \
  -g log.txt
 ```
@@ -132,7 +132,7 @@ C:\> cd bioinfo
 C:\bioinfo> panda\pandaseq.exe -h
 
 # run pandaseq with the FASTQ data
-C:\bioinfo> panda\pandaseq.exe -f Platz16_S16_L001_R1_001.fastq.bz2 -r Platz16_S16_L001_R2_001.fastq.bz2  -w Platz16.output.fasta -g log.txt
+C:\bioinfo> panda\pandaseq.exe -f Platz16_S16_L001_R1_001.fastq -r Platz16_S16_L001_R2_001.fastq -w Platz16.output.fasta -g log.txt
 ```
 
 
@@ -148,7 +148,7 @@ C:\bioinfo> panda\pandaseq.exe -f Platz16_S16_L001_R1_001.fastq.bz2 -r Platz16_S
 
 ```bash
 # linux / mac command line
-$ head output.fasta
+$ head Platz16.output.fasta
 >520_1 M02093:94:000000000-ACE80:1:1101:10143:1267:43
 GTGCCAGCAGCCGCGGTAATACGGAGGGTGCAAGCGTTACTCGGAATCACTGGGCGTAAAGGGCGCGTAGGCGGATTATCAAGTCTCTTGTGAAATCTAGGAGCTTAACTTCTAAACTGCTTGGGAAACTGATAATCTAGAGTGGGGGAGAGGCAGATGGAATTGGTGGTGTAGGGGTAAAATCCGTAGATATCACCAAGAATACCCATTGCGAACGCGATCTGCTGGAACTTAACTGACGCTAATGCGCGAAAGCGTGGGGAGCAAAAAGGATTACACACCAGTGGAGTCACTTGCGACAGGGGGTCTGCGCTCGGGGAAATGTGGGGGGGGGAACTTTTATCTGTGATTCTGGGGGGAAATGGTGTCGTAGGTGGATTATCAAGGTTCTTGTGAAATCTAGGAGCTTAACTTCTAAACTGCTGTGGAACCTGATAATCTTGAGTGGGGGGTAGGCAGATGGAATTGGTGGTGTAGGGGTAAAATCCGTAGATATCACCAAGAATACCCATTGCGAAGGCGATCTGCTGGAACTTAACTGACGCTAATGCGCGAAAGCGTGGGGAGCAAACAGGATTAGAAACCCGGGTAGTCC
 >520_2 M02093:94:000000000-ACE80:1:1101:15155:1492:43
@@ -208,17 +208,17 @@ setwd("C:/bioinfo")
 # set working directory (linux/mac)
 setwd("/bioinfo")
 
-# OTU file
+# OTU data
 InputBiomFile <- "mikrobiome2020.biom"
 
-# Samples' file
+# Samples' data
 InputMapFile <- "mapping2020.tsv"
 
 # prepare phyloseq object by loading both files
 BiomData <- import_biom(InputBiomFile, parseFunction = parse_taxonomy_greengenes)
 SampleData <- import_qiime_sample_data(InputMapFile)
 
-# create phyloseq object by merging OTUs and sample data
+# create phyloseq object by merging OTU and sample data
 ExperimentPhyloseqObject <- merge_phyloseq(BiomData, SampleData)
 
 # create a temporary phyloseq object for working
