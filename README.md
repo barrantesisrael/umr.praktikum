@@ -62,7 +62,7 @@ C:\> mkdir bioinfo
 
 - `FastQC`: [Windows/Linux zip file](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.zip); Mac [DMG image](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.dmg)
 
-- `R`: [Windows](https://ftp.gwdg.de/pub/misc/cran/bin/windows/base/R-3.6.1-win.exe), [OSX](https://cran.rstudio.com/bin/macosx/R-3.6.1.pkg) 10.11+; Linux versions [here](https://cran.r-project.org/bin/linux/)
+- `R`: [Windows](https://ftp.gwdg.de/pub/misc/cran/bin/windows/base/R-4.0.2-win.exe), [OSX](https://cran.rstudio.com/bin/macosx/R-3.6.1.pkg) 10.11+; Linux versions [here](https://cran.r-project.org/bin/linux/)
 
 - `RStudio`: [Windows 10/8/7](https://download1.rstudio.org/desktop/windows/RStudio-1.2.5001.exe) (64 bit), [OSX](https://download1.rstudio.org/desktop/macos/RStudio-1.2.5001.dmg) 10.12+, [Ubuntu](https://download1.rstudio.org/desktop/trusty/amd64/rstudio-1.2.5001-amd64.deb) 14. 
 
