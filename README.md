@@ -27,7 +27,7 @@ These sessions will cover the use of a variety of software tools needed for the 
 
 ##### Data
 
-- Illumina data: cloud drive available as soon as the FASTQ data is ready.
+- Illumina data: [cloud drive](https://drive.google.com/drive/folders/16M2Gn7gn_3vORVX6uAy4k9LdNNsL7KO_); see `fastq` folder
 - Alternatively, the course can be also followed using the [MiSeq SOP](http://www.mothur.org/w/images/d/d6/MiSeqSOPData.zip) FASTQ files (Kosich et al., 2013).
 
 ##### Online tools
