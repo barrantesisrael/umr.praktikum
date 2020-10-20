@@ -183,8 +183,11 @@ C:\bioinfo> type Platz16.output.fasta | more
 
 -->
 
-- Access the [RDP Classifier webserver](http://rdp.cme.msu.edu/classifier/classifier.jsp) and paste the copied sequence in the textbox under `Cut and paste sequence(s) (in Fasta, GenBank, or EMBL format):`
+- Download your FASTA header output file e.g. `Platz22.fasta.txt` to your `bioinfo` folder
+- Access the [RDP Classifier webserver](http://rdp.cme.msu.edu/classifier/classifier.jsp) 
+- Upload the FASTA header by clicking on `Browse`, next to "_Choose a file (unaligned format) to upload:_"; select the file and hit `Open`
 - Click on `Submit`. When the run is already complete, examine the results. These can be also downloaded by clicking on `download entire hierarchy as text file`.
+
 
 ##### 3.2 Install R packages
 
