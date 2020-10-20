@@ -143,7 +143,9 @@ C:\bioinfo> panda\pandaseq.exe -f Platz16_S16_L001_R1_001.fastq -r Platz16_S16_L
 
 ##### 3.1 Align sequence data to rRNA databases
 
-- Open your FASTA output file e.g. `output.fasta`, on the `Editor` (`Notepad`)
+<!--
+
+- Open your FASTA header output file e.g. `output.fasta.txt`, on the `Editor` (`Notepad`)
 
 Windows users: Choose a program to open ("_Programm aus einer Liste installierter Programme auswählen_"), then pick the `Editor` (`Notepad`)
 
@@ -178,6 +180,8 @@ Windows command:
 ```
 C:\bioinfo> type Platz16.output.fasta | more
 ```
+
+-->
 
 - Access the [RDP Classifier webserver](http://rdp.cme.msu.edu/classifier/classifier.jsp) and paste the copied sequence in the textbox under `Cut and paste sequence(s) (in Fasta, GenBank, or EMBL format):`
 - Click on `Submit`. When the run is already complete, examine the results. These can be also downloaded by clicking on `download entire hierarchy as text file`.
@@ -218,7 +222,7 @@ setwd("/bioinfo")
 InputBiomFile <- "mikrobiome2020.biom"
 
 # Samples' data
-InputMapFile <- "mapping2020.tsv"
+InputMapFile <- "metadata2020.tsv"
 
 # prepare phyloseq object by loading both files
 BiomData <- import_biom(InputBiomFile, parseFunction = parse_taxonomy_greengenes)
@@ -228,30 +232,34 @@ SampleData <- import_qiime_sample_data(InputMapFile)
 ExperimentPhyloseqObject <- merge_phyloseq(BiomData, SampleData)
 
 # create a temporary phyloseq object for working
-ExperimentPhyloseqTempObject <- ExperimentPhyloseqObject
+psTemp <- ExperimentPhyloseqObject
+
+# checking the features of our microbiome data
+psTemp
 ```
 
-##### 3.4 Microbial communities
-
-```r
-# Plot abundances
-plot_bar(ExperimentPhyloseqTempObject, "X.SampleID", fill="Phylum")
-```
-
-##### 3.5 Sample ordination
+##### 3.4 Sample ordination
 
 ```r
 # Calculate distance and ordination
-iDist <- distance(ExperimentPhyloseqTempObject, method="bray")
-iMDS  <- ordinate(ExperimentPhyloseqTempObject, distance=iDist)
+iDist <- distance(psTemp, method="bray")
+iMDS  <- ordinate(psTemp, distance=iDist)
 
 # plot sample ordination
-plot_ordination(ExperimentPhyloseqTempObject, iMDS, color="Gender")
+plot_ordination(psTemp, iMDS, color="Gender")
 
 # plot sample ordination, including labels
-plot_ordination(ExperimentPhyloseqTempObject, iMDS, color="Gender") + 
+plot_ordination(psTemp, iMDS, color="Gender") + 
   geom_text(aes(label=X.SampleID), hjust=0, vjust=0) 
 ```
+
+##### 3.5 Microbial communities
+
+```r
+# Plot abundances
+plot_bar(psTemp, "X.SampleID", fill="Phylum")
+```
+
 
 ---
 
